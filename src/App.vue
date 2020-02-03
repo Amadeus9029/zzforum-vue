@@ -41,7 +41,7 @@
         <index-carousel></index-carousel>
       </el-col>
     </el-row>
-    123456123
+    修改版本一
   </div>
 </template>
 
