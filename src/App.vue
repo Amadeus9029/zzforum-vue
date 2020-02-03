@@ -41,6 +41,7 @@
         <index-carousel></index-carousel>
       </el-col>
     </el-row>
+    123456
   </div>
 </template>
 
