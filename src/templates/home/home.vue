@@ -13,6 +13,7 @@
     </el-row>
     <el-row>
       <el-col>
+        <router-link :to="{path:'/user'}">user</router-link>
         <el-button @click="add">+</el-button>
       </el-col>
     </el-row>

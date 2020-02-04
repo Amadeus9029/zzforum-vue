@@ -2,14 +2,14 @@
   <div class="user">
     <el-row>
       <el-col>
-        <nav-mennu></nav-mennu>
+        <nav-menu></nav-menu>
       </el-col>
     </el-row>
   </div>
 </template>
 
 <script>
-import NavMenu from "../../components/NavMenu/NavMenu";
+import NavMenu from "@/components/NavMenu/NavMenu";
 export default {
   name: "User",
   components: {
