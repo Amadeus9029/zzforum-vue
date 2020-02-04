@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import Router from 'vue-router'
-import Home from '@/templates/home/home'
-import User from '@/templates/user/user'
+import Home from '@/views/home/home'
+import User from '@/views/user/user'
 Vue.use(Router)
 
 export default new Router({
