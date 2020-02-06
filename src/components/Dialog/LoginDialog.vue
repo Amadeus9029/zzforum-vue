@@ -31,11 +31,15 @@ export default {
     var validateName = (rule, value, callback) => {
       if (value === "") {
         callback(new Error("请输入用户名"));
+      } else {
+        callback();
       }
     };
     var validatePass = (rule, value, callback) => {
       if (value === "") {
         callback(new Error("请输入密码"));
+      } else {
+        callback();
       }
     };
     return {
@@ -52,12 +56,14 @@ export default {
   },
   methods: {
     submitForm(formName) {
+      console.log("submit");
       this.$refs[formName].validate(valid => {
         if (valid) {
-          this.$axios
-            .post("/api/login", {
-              name: this.ruleForm.pass,
-              password: this.ruleForm.age
+          console.log(this.$store);
+          this.$store
+            .dispatch("user/loginAction", {
+              name: this.ruleForm.name,
+              password: this.ruleForm.password
             })
             .then(response => {
               console.log(response);
@@ -65,8 +71,8 @@ export default {
                 type: "success",
                 message: "登录成功!"
               });
-              this.$axios.defaults.headers.common["Authorization"] =
-                response.data;
+              // this.$axios.defaults.headers.common["Authorization"] =
+              //   response.data;
               this.centerDialogVisible = false;
             });
         } else {

@@ -31,11 +31,21 @@ export default {
     var validateName = (rule, value, callback) => {
       if (value === "") {
         callback(new Error("请输入用户名"));
+      } else {
+        if (this.ruleForm.name !== "") {
+          this.$refs.ruleForm.validateField("name");
+        }
+        callback();
       }
     };
     var validatePass = (rule, value, callback) => {
       if (value === "") {
         callback(new Error("请输入密码"));
+      } else {
+        if (this.ruleForm.password !== "") {
+          this.$refs.ruleForm.validateField("password");
+        }
+        callback();
       }
     };
     return {
