@@ -72,7 +72,7 @@
     }
   };
 </script>
-<style scoped>
+<style scoped lang="scss">
   .el-header {
     padding: 0;
   }
