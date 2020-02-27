@@ -10,7 +10,7 @@
         <user-menu></user-menu>
       </el-col>
       <el-col>
-        <el-button @click="login">click to login</el-button>
+        <router-view></router-view>
       </el-col>
     </el-row>
   </div>

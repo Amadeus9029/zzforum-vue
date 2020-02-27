@@ -2,7 +2,7 @@ import db from '@/utils/localstorage'
 const TokenKey = 'Auth-Token'
 
 export function getToken() {
-  return db.get()
+  return db.get(TokenKey)
 }
 
 export function setToken(token) {

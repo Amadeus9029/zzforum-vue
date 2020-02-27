@@ -18,7 +18,7 @@
       </el-col>
       <el-col :span="19">
         <el-row type="flex" justify="start" style="margin-top: 20px">
-          <el-col class="userSource" :span="3" v-for="item in userSource" :key="item">
+          <el-col class="userSource" :span="3" v-for="item,i in userSource" :key="i">
             <el-card shadow="hover">
               <i class="el-icon-s-tools" style="float:right"></i>
               <div>
