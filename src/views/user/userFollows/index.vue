@@ -18,7 +18,7 @@
               <div>用户名</div>
             </el-col>
             <el-col align="left" style="margin-top:20px">
-              <div>这个人啥</div>
+              <div>这个人啥都没有写</div>
             </el-col>
           </el-row>
         </el-col>
