@@ -1,5 +1,5 @@
 <template>
-  <div class="userMessage" style="padding-top:20px;width:70vw">
+  <div class="userMessage" style="padding-top:20px;">
     <el-breadcrumb separator-class="el-icon-arrow-right">
       <el-breadcrumb-item :to="{ path: '/' }">首页</el-breadcrumb-item>
       <el-breadcrumb-item>活动管理</el-breadcrumb-item>

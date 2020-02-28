@@ -1,9 +1,9 @@
 <template>
-  <div class="user-menu">
+  <div class="user-menu" style="height:100%">
     <el-menu
       default-active="1-4-1"
       class="el-menu-vertical-demo"
-      style="height:calc(100vh - 61px)"
+      style="height:inherit"
       @open="handleOpen"
       @close="handleClose"
       :collapse="isCollapse"
